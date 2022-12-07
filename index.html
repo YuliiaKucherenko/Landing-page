@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: linear-gradient(
+          358.3deg,
+          rgb(255, 82, 168) 12.9%,
+          rgb(177, 118, 240) 134.3%
+        );
+
+        width: 99%;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        border: 2px solid #000;
+        padding: 20px;
+        border-radius: 8px;
+        font-size: 35px;
+        margin: auto;
+      }
+      hr {
+        border: none;
+        background-color: #000;
+        color: #000;
+        height: 1px;
+      }
+      h2 {
+        text-align: center;
+        padding: 8px;
+        font-size: 25px;
+        margin: auto;
+      }
+      .container {
+        margin: 0 auto;
+        padding: 15px 60px;
+        max-width: 900px;
+      }
+      span {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #070f4e;
+        box-shadow: 8px 13px 13px rgba(78, 7, 83, 0.1);
+      }
+      img {
+        margin: 0 auto;
+        display: block;
+        max-width: 60%;
+        border-radius: 10px;
+        width: 400px;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 23px;
+      }
+      a {
+        color: #070f4e;
+        font-size: 18px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #f5c7f7;
+        font-size: 24px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        cursor: pointer;
+        opacity: 0.9;
+        background: #9f229f;
+      }
+      .footer {
+        text-align: center;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Traditional food</h1>
+      <h2>Ukrainian varenyky</h2>
+      <hr />
+      <img
+        src=" https://s3.amazonaws.com/shecodesio-production/uploads/files/000/040/400/original/Varenyky-Oekrai%CC%88ense-dumplings1-500x500.jpg?1657823870"
+        alt="varenyky"
+      />
+      <hr />
+      <p>
+        These <strong>wonderful</strong> dumplings, with all kinds of fillings,
+        are gently covered with sour cream and they just melt in your mouth.<br />
+        There are all kinds of filling:
+        <span>
+          <em>
+            auerkraut, potatoes, buckwheat + cottage cheese, potato + mushrooms
+            sweet cottage cheese, sour cottage cheese sugared cherries,
+            blueberries, rhubarb, and plenty more.
+          </em>
+        </span>
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Pierogi" target="_blank">
+        Read more on Wikipedia
+      </a>
+      <button>Try Varenyky 🥟</button>
+      <p class="footer">This page was built by Yuliia</p>
+    </div>
+    <script>
+      function tryVarenyky() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email adress?");
+        if (name) {
+          alert("Thanks," + name + " ! We will be in touch wih you🥟");
+        } else {
+          alert("No name,no food for you!");
+        }
+      }
+      let tryButton = document.querySelector("button");
+      tryButton.addEventListener("click", tryVarenyky);
+    </script>
+  </body>
+</html>
